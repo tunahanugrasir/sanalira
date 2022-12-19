@@ -2,4 +2,6 @@
 <resources>
     <color name="chefsHat">#f3f4f6</color>
     <color name="snowPea">#66cc78</color>
+    <color name="lightHorizonSky">#CFD4DE</color>
+    <color name="white">#ffffff</color>
 </resources>
