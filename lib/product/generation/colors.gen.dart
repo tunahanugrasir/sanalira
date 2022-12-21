@@ -16,6 +16,9 @@ class ColorName {
   /// Color: #f3f4f6
   static const Color chefsHat = Color(0xFFF3F4F6);
 
+  /// Color: #141C2D
+  static const Color heBlack = Color(0xFF141C2D);
+
   /// Color: #CFD4DE
   static const Color lightHorizonSky = Color(0xFFCFD4DE);
 

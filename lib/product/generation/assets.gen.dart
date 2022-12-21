@@ -24,11 +24,45 @@ class $AssetsColorGen {
 class $AssetsIconGen {
   const $AssetsIconGen();
 
+  /// File path: assets/icon/ic-back-arrow.svg
+  SvgGenImage get icBackArrow =>
+      const SvgGenImage('assets/icon/ic-back-arrow.svg');
+
+  /// File path: assets/icon/ic-card.svg
+  SvgGenImage get icCard => const SvgGenImage('assets/icon/ic-card.svg');
+
+  /// File path: assets/icon/ic-home.svg
+  SvgGenImage get icHome => const SvgGenImage('assets/icon/ic-home.svg');
+
+  /// File path: assets/icon/ic-notification.svg
+  SvgGenImage get icNotification =>
+      const SvgGenImage('assets/icon/ic-notification.svg');
+
+  /// File path: assets/icon/ic-settings.svg
+  SvgGenImage get icSettings =>
+      const SvgGenImage('assets/icon/ic-settings.svg');
+
+  /// File path: assets/icon/ic-transaction.svg
+  SvgGenImage get icTransaction =>
+      const SvgGenImage('assets/icon/ic-transaction.svg');
+
   /// File path: assets/icon/ic-turkey.svg
   SvgGenImage get icTurkey => const SvgGenImage('assets/icon/ic-turkey.svg');
 
+  /// File path: assets/icon/ic-user.svg
+  SvgGenImage get icUser => const SvgGenImage('assets/icon/ic-user.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [icTurkey];
+  List<SvgGenImage> get values => [
+        icBackArrow,
+        icCard,
+        icHome,
+        icNotification,
+        icSettings,
+        icTransaction,
+        icTurkey,
+        icUser
+      ];
 }
 
 class $AssetsImageGen {
@@ -37,12 +71,16 @@ class $AssetsImageGen {
   /// File path: assets/image/bg-image.png
   AssetGenImage get bgImage => const AssetGenImage('assets/image/bg-image.png');
 
+  /// File path: assets/image/bg-rectangle.svg
+  SvgGenImage get bgRectangle =>
+      const SvgGenImage('assets/image/bg-rectangle.svg');
+
   /// File path: assets/image/logo-image.png
   AssetGenImage get logoImage =>
       const AssetGenImage('assets/image/logo-image.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [bgImage, logoImage];
+  List<dynamic> get values => [bgImage, bgRectangle, logoImage];
 }
 
 class $AssetsSvgGen {
