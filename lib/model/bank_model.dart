@@ -1,44 +1,53 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:equatable/equatable.dart';
 import 'package:vexana/vexana.dart';
 
 part 'bank_model.g.dart';
 
-@JsonSerializable(createToJson: false)
-class BankModel extends INetworkModel<BankModel> {
-  Response? response;
-  List<Data>? data;
+class BankModel extends INetworkModel<BankModel> with EquatableMixin {
+  final Response? response;
+  final List<Data>? data;
 
-  BankModel({this.response, this.data});
-
-  factory BankModel.fromJson(Map<String, dynamic> json) {
-    return _$BankModelFromJson(json);
-  }
+  BankModel({
+    this.response,
+    this.data,
+  });
 
   @override
-  fromJson(Map<String, dynamic> json) {
-    return _$BankModelFromJson(json);
+  List<Object?> get props => [response, data];
+
+  @override
+  BankModel fromJson(Map<String, dynamic> json) {
+    // TODO: implement fromJson
+    throw UnimplementedError();
   }
 
   @override
   Map<String, dynamic>? toJson() {
-    return null;
+    // TODO: implement toJson
+    throw UnimplementedError();
   }
 }
 
-@JsonSerializable(createToJson: false)
-class Response {
+class Response extends INetworkModel<Response> {
   int? code;
   String? message;
 
   Response({this.code, this.message});
 
-  factory Response.fromJson(Map<String, dynamic> json) {
-    return _$ResponseFromJson(json);
+  @override
+  Response fromJson(Map<String, dynamic> json) {
+    // TODO: implement fromJson
+    throw UnimplementedError();
+  }
+
+  @override
+  Map<String, dynamic>? toJson() {
+    // TODO: implement toJson
+    throw UnimplementedError();
   }
 }
 
-@JsonSerializable(createToJson: false)
-class Data {
+class Data extends INetworkModel<Data> {
   String? bankName;
   String? bankIban;
   String? bankAccountName;
@@ -46,7 +55,15 @@ class Data {
 
   Data({this.bankName, this.bankIban, this.bankAccountName, this.descriptionNo});
 
-  factory Data.fromJson(Map<String, dynamic> json) {
-    return _$DataFromJson(json);
+  @override
+  Data fromJson(Map<String, dynamic> json) {
+    // TODO: implement fromJson
+    throw UnimplementedError();
+  }
+
+  @override
+  Map<String, dynamic>? toJson() {
+    // TODO: implement toJson
+    throw UnimplementedError();
   }
 }
